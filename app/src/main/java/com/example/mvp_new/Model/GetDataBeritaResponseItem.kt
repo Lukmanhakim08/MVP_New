@@ -1,8 +1,11 @@
 package com.example.mvp_new.Model
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class GetDataBeritaResponseItem(
     @SerializedName("author")
     val author: String,
@@ -16,4 +19,4 @@ data class GetDataBeritaResponseItem(
     val image: String,
     @SerializedName("title")
     val title: String
-)
+): Parcelable
